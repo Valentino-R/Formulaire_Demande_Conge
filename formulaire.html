@@ -31,16 +31,20 @@
                 <input type="email" name="emailrs" id="emailrs" placeholder="Ex. : prénom.nom@.orif.ch" size="30" maxlength="40">
             </p>
             <p>
-                <label for="date">indiquez la date de votre absence</label>
-                <input type="date" id="date" name="date" min="2025-01-01" max="2025-12-31" />
+                <label for="datedebut">indiquez la date du debut de votre absence</label>
+                <input type="date" id="datedebut" name="datedebut" min="2025-01-01" max="2025-12-31" />
+            </p>
+            <p>
+                <label for="datefin">indiquez la date de fin de votre absence</label>
+                <input type="date" id="datefin" name="datefin" min="2025-01-01" max="2025-12-31" />
             </p>
             <p>
                 <label for="herdebut">indiquez l'heure du début de votre absence</label>
-                <input type="time" id="heurdebut" name="heurdebut" min="8" max="17" />
+                <input type="time" id="heurdebut" name="heurdebut" min="00:08:00" max="00:17:00" />
             </p>
             <p>
                 <label for="heurfin">indiquez l'heure de fin de votre absence</label>
-                <input type="time" id="heurfin" name="heurfin" min="8" max="17" />
+                <input type="time" id="heurfin" name="heurfin" min="00:08:00" max="00:17:00" />
             </p>
             </form>
         </form>
