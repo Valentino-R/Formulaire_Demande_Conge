@@ -9,7 +9,7 @@
         <img src="" alt=""> <!--logo orif ici-->
     </header>
     <main>
-        <form method="get" action="">
+        <form method="post" action="">
             <p>
                 <label for="prenom">Votre prénom </label>
                 <input type="text" name="prenom" id="prenom" placeholder="Ex. : Mathieu" size="30" maxlength="20">
@@ -45,6 +45,10 @@
             <p>
                 <label for="heurfin">indiquez l'heure de fin de votre absence</label>
                 <input type="time" id="heurfin" name="heurfin" min="00:08:00" max="00:17:00" />
+            </p>
+            <p>
+                <label for="motif">Motif de l'absence ?</label><br>
+                <textarea name="motif" id="motif" placeholder="Ex. : rdv chez le psy"></textarea>
             </p>
             </form>
         </form>
