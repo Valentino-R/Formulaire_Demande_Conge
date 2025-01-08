@@ -12,43 +12,46 @@
         <form method="post" action="">
             <p>
                 <label for="prenom">Votre prénom </label>
-                <input type="text" name="prenom" id="prenom" placeholder="Ex. : Mathieu">
+                <input type="text" name="prenom" id="prenom" placeholder="Ex. : Mathieu" required>
             </p>
             <p>
                 <label for="nom">Votre Nom </label>
-                <input type="text" name="nom" id="nom" placeholder="Ex. : Dupont">
+                <input type="text" name="nom" id="nom" placeholder="Ex. : Dupont" required>
             </p>
             <p>
                 <label for="emailbenef">Votre email </label>
-                <input type="email" name="emailbenef" id="emailbenef" placeholder="Ex. : prénom.nom@formation.orif.ch">
+                <input type="email" name="emailbenef" id="emailbenef" placeholder="Ex. : prénom.nom@formation.orif.ch" required>
             </p>
             <p>
                 <label for="emailmsp">email de votre MSP</label>
-                <input type="email" name="emailmsp" id="emailmsp" placeholder="Ex. : prénom.nom@.orif.ch">
+                <input type="email" name="emailmsp" id="emailmsp" placeholder="Ex. : prénom.nom@.orif.ch" required>
             </p>
             <p>
                 <label for="emailrs">email de votre RS</label>
-                <input type="email" name="emailrs" id="emailrs" placeholder="Ex. : prénom.nom@.orif.ch">
+                <input type="email" name="emailrs" id="emailrs" placeholder="Ex. : prénom.nom@.orif.ch" required>
             </p>
             <p>
                 <label for="datedebut">indiquez la date du debut de votre absence</label>
-                <input type="date" id="datedebut" name="datedebut" min="2025-01-01" max="2025-12-31" />
+                <input type="date" id="datedebut" name="datedebut" min="2025-01-01" max="2025-12-31" required>
             </p>
             <p>
                 <label for="datefin">indiquez la date de fin de votre absence</label>
-                <input type="date" id="datefin" name="datefin" min="2025-01-01" max="2025-12-31" />
+                <input type="date" id="datefin" name="datefin" min="2025-01-01" max="2025-12-31" required>
             </p>
             <p>
                 <label for="herdebut">indiquez l'heure du début de votre absence</label>
-                <input type="time" id="heurdebut" name="heurdebut" min="00:08:00" max="00:17:00" />
+                <input type="time" id="heurdebut" name="heurdebut" min="00:08:00" max="00:17:00" required>
             </p>
             <p>
                 <label for="heurfin">indiquez l'heure de fin de votre absence</label>
-                <input type="time" id="heurfin" name="heurfin" min="00:08:00" max="00:17:00" />
+                <input type="time" id="heurfin" name="heurfin" min="00:08:00" max="00:17:00" required>
             </p>
             <p>
                 <label for="motif">Motif de l'absence ?</label><br>
                 <textarea name="motif" id="motif" placeholder="Ex. : rdv chez le psy"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Envoyer votre demande">
             </p>
             </form>
         </form>
