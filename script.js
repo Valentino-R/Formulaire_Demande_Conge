@@ -46,5 +46,6 @@ let reponceMsp = baliseReponceMsp.value
 let baliseReponceRs = document.getElementById("reponsers")
 let reponceRs = baliseReponceRs.value
 
+//tableau de toute les info de la demande
 let infoDemandeConge = [prenom, nom, emailBenef, dateDebut, dateFin, heurDebut, heurFin, motif]
 let infoDemandeConge = document.createElement("div")
