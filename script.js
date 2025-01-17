@@ -16,16 +16,16 @@ let reponceRs = baliseReponceRs.value
 
 //récupération des info du bénéficiaire
 let infoBenef ={
-    "nom" : document.getElementById("nom").value
-    "prenom" : document.getElementById("prenom").value
-    "email" : document.getElementById("emailbenef").value
+    "nom" : document.getElementById("nom").value,
+    "prenom" : document.getElementById("prenom").value,
+    "email" : document.getElementById("emailbenef").value,
 }
 
 //récupération des info de la demande de congé
 let infoDemande = {
-    "datedebut" : document.getElementById("datedebut").value
-    "datefin" : document.getElementById("datefin").value
-    "heurdebut" : document.getElementById("heurdebut").value
-    "heurfin" : document.getElementById("heurfin").value
-    "motif" : document.getElementById("motif").value
+    "datedebut" : document.getElementById("datedebut").value,
+    "datefin" : document.getElementById("datefin").value,
+    "heurdebut" : document.getElementById("heurdebut").value,
+    "heurfin" : document.getElementById("heurfin").value,
+    "motif" : document.getElementById("motif").value,
 }
