@@ -45,3 +45,6 @@ let reponceMsp = baliseReponceMsp.value
 //récuperation de la réponce du msp
 let baliseReponceRs = document.getElementById("reponsers")
 let reponceRs = baliseReponceRs.value
+
+let infoDemandeConge = [prenom, nom, emailBenef, dateDebut, dateFin, heurDebut, heurFin, motif]
+let infoDemandeConge = document.createElement("div")
