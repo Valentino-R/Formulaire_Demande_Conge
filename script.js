@@ -6,34 +6,42 @@ let prenom = balisePrenom.value
 let baliseNom = document.getElementById("nom")
 let nom = baliseNom.value
 
-//recuperation de l'email du bénéficiaire
+//récuperation de l'email du bénéficiaire
 let baliseEmailBenef = document.getElementById("emailbenef")
 let emailBenef = baliseEmailBenef.value
 
-//recuperation de l'email du Msp
+//récuperation de l'email du Msp
 let baliseEmailMsp = document.getElementById("emailmsp")
 let emailMsp = baliseEmailMsp.value
 
-//recuperation de l'email du Rs
+//récuperation de l'email du Rs
 let baliseEmailRs = document.getElementById("emailrs")
 let emailRs = baliseEmailRs.value
 
-//récuperation 
+//récuperation de la date de début
 let baliseDateDebut = document.getElementById("datedebut")
 let dateDebut = baliseDateDebut.value
 
-//récuperation 
+//récuperation de la date de fin 
 let baliseDateFin = document.getElementById("datefin")
 let dateFin = baliseDateFin.value
 
-//récuperation 
+//récuperation de l'heure de début 
 let baliseHeurDebut = document.getElementById("heurdebut")
 let heurDebut = baliseHeurDebut.value
 
-//récuperation 
+//récuperation l'heure de fin 
 let baliseHeurFin = document.getElementById("heurfin")
 let heurFin = baliseHeurFin.value
 
-//récuperation 
+//récuperation du motif
 let baliseMotif = document.getElementById("motif")
 let motif = baliseMotif.value
+
+//récuperation de la réponce du msp
+let baliseReponceMsp = document.getElementById("reponsemsp")
+let reponceMsp = baliseReponceMsp.value
+
+//récuperation de la réponce du msp
+let baliseReponceRs = document.getElementById("reponsers")
+let reponceRs = baliseReponceRs.value
