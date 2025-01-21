@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Validation demande de congé</title>
+    </head>
+    <body>
+    <header>
+        <img src="" alt=""> <!--logo orif ici-->
+    </header>
+    <main>
+        <p>Prénom et nom du bénéficiair</p>
+        <p>Address mail du bénéficiair</p>
+        <p>Date et heur du début et de fin du congé</p> <!--ces paragraphes sont temporair-->
+        <p>Address mail du MSP</p>
+        <p>Motif de la demande de congé</p>
+        <form method="get" action="">
+            <p>
+                <label for="reponse">Validé vous la demande congé ?</label><br>
+                <select name="reponse" id="reponsers">
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                    <option value="compensation">Demande de compensation</option>
+                </select>
+            </p>
+            <p>
+                <label for="motif">Si non motif du refus </label><br>
+                <textarea name="motif" id="motif"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Confirmer votre réponce">
+            </p>
+        </form>    
+    </main>
+    <footer></footer>    
+    </body>
+</html>

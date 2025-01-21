@@ -14,16 +14,6 @@ let emailRs = baliseEmailRs.value
 //let baliseReponceRs = document.getElementById("reponsers")
 //let reponceRs = baliseReponceRs.value
 
-
-
-//récupération des info de la demande de congé
-let infoDemande = {
-    "datedebut" : document.getElementById("datedebut").value,
-    "datefin" : document.getElementById("datefin").value,
-    "heurdebut" : document.getElementById("heurdebut").value,
-    "heurfin" : document.getElementById("heurfin").value,
-    "motif" : document.getElementById("motif").value,
-}
 document.getElementById("submit").addEventListener("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -34,15 +24,32 @@ let infoBenef ={
     "prenom" : document.getElementById("prenom").value,
     "email" : document.getElementById("emailbenef").value,
 }
-   
-    document.getElementById("form").classList.add("hide")
-    document.getElementById("simumsp").classList.remove("hide")
-    document.getElementById("infoconge").innerHTML = document.createElement 
-    `<div>
-        <p>${infoBenef.prenom} <p\>
-        <p>${infoBenef.nom} <p\>
-        <p>${infoBenef.email} <p\>
-    <div\>`
+
+//récupération des info de la demande de congé.
+let infoDemande = {
+    "datedebut" : document.getElementById("datedebut").value,
+    "datefin" : document.getElementById("datefin").value,
+    "heurdebut" : document.getElementById("heurdebut").value,
+    "heurfin" : document.getElementById("heurfin").value,
+    "motif" : document.getElementById("motif").value,
+}
+
+//Masquage du formulair pout la simulation de changement de page   
+document.getElementById("form").classList.add("hide")
+
+//Démasquage de la partie validation du msp
+document.getElementById("simumsp").classList.remove("hide")
+
+//transpher des info saisie dans le formulaire sur la "nouvelle page"
+document.getElementById("infoconge").innerHTML = `<div>
+        <p>Info demande de congé</p>
+        <p>Prénom: ${infoBenef.prenom} </p>
+        <p>Nom: ${infoBenef.nom} </p>
+        <p>Email: ${infoBenef.email} </p>
+        <p>Date: Du ${infoDemande.datedebut +"au "+ infoDemande.datefin}  </p>
+        <p>Nom: De${infoDemande.heurdebut +"à "+ infoDemande.heurfin} </p>
+        <p>Motif: ${infoDemande.motif} </p>
+    </div>`
 })
 
 
