@@ -46,8 +46,8 @@ document.getElementById("infoconge").innerHTML = `<div>
         <p>Prénom: ${infoBenef.prenom} </p>
         <p>Nom: ${infoBenef.nom} </p>
         <p>Email: ${infoBenef.email} </p>
-        <p>Date: Du ${infoDemande.datedebut +"au "+ infoDemande.datefin}  </p>
-        <p>Nom: De${infoDemande.heurdebut +"à "+ infoDemande.heurfin} </p>
+        <p>Date: Du ${infoDemande.datedebut +" au "+ infoDemande.datefin}  </p>
+        <p>Nom: De ${infoDemande.heurdebut +" à "+ infoDemande.heurfin} </p>
         <p>Motif: ${infoDemande.motif} </p>
     </div>`
 })
