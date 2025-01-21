@@ -3,55 +3,57 @@
     <head>
         <meta charset="utf-8">
         <title>Formulaire demande de congé</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <header>
         <img src="" alt=""> <!--logo orif ici-->
     </header>
     <main>
-        <form method="post" action="">
+    <section id="form">
+        <form method="get" action="">
             <fieldset>
                 <legend>Donée du bénéficiair</legend>
                 <p>
                     <label for="prenom">Votre prénom </label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Ex. : Mathieu" required>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ex. : Mathieu">
                 </p>
                 <p>
                     <label for="nom">Votre Nom </label>
-                    <input type="text" name="nom" id="nom" placeholder="Ex. : Dupont" required>
+                    <input type="text" name="nom" id="nom" placeholder="Ex. : Dupont">
                 </p>
                 <p>
                     <label for="emailbenef">Votre email </label>
-                    <input type="email" name="emailbenef" id="emailbenef" placeholder="Ex. : prénom.nom@formation.orif.ch" required>
+                    <input type="email" name="emailbenef" id="emailbenef" placeholder="Ex. : prénom.nom@formation.orif.ch">
                 </p>
             </fieldset>
             <fieldset>
                 <legend>Donnée additionnel</legend>
                 <p>
                     <label for="emailmsp">email de votre MSP</label>
-                    <input type="email" name="emailmsp" id="emailmsp" placeholder="Ex. : prénom.nom@.orif.ch" required>
+                    <input type="email" name="emailmsp" id="emailmsp" placeholder="Ex. : prénom.nom@.orif.ch">
                 </p>
                 <p>
                     <label for="emailrs">email de votre RS</label>
-                    <input type="email" name="emailrs" id="emailrs" placeholder="Ex. : prénom.nom@.orif.ch" required>
+                    <input type="email" name="emailrs" id="emailrs" placeholder="Ex. : prénom.nom@.orif.ch">
                 </p>
             </fieldset><fieldset>
                 <legend>Donnée du congé</legend>
                 <p>
                     <label for="datedebut">indiquez la date du debut de votre absence</label>
-                    <input type="date" id="datedebut" name="datedebut" min="2025-01-01" max="2025-12-31" required>
+                    <input type="date" id="datedebut" name="datedebut" min="2025-01-01" max="2025-12-31">
                 </p>
                 <p>
                     <label for="datefin">indiquez la date de fin de votre absence</label>
-                    <input type="date" id="datefin" name="datefin" min="2025-01-01" max="2025-12-31" required>
+                    <input type="date" id="datefin" name="datefin" min="2025-01-01" max="2025-12-31">
                 </p>
                 <p>
                     <label for="herdebut">indiquez l'heure du début de votre absence</label>
-                    <input type="time" id="heurdebut" name="heurdebut" min="00:08:00" max="00:17:00" required>
+                    <input type="time" id="heurdebut" name="heurdebut" min="00:08:00" max="00:17:00">
                 </p>
                 <p>
                     <label for="heurfin">indiquez l'heure de fin de votre absence</label>
-                    <input type="time" id="heurfin" name="heurfin" min="00:08:00" max="00:17:00" required>
+                    <input type="time" id="heurfin" name="heurfin" min="00:08:00" max="00:17:00">
                 </p>
                 <p>
                     <label for="motif">Motif de l'absence ?</label><br>
@@ -59,10 +61,14 @@
                 </p>
             </fieldset>
             <p>
-                <input type="submit" value="Envoyer votre demande">
+                <input type="submit" value="Envoyer votre demande" id="submit">
             </p>
             </form>
         </form>
+    </section>
+    <section class="hide" id="simumsp">
+        <p id="infoconge"></p>
+    </section>
     </main>
     <footer>
 

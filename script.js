@@ -7,19 +7,14 @@ let baliseEmailRs = document.getElementById("emailrs")
 let emailRs = baliseEmailRs.value
 
 //récuperation de la réponce du msp
-let baliseReponceMsp = document.getElementById("reponsemsp")
-let reponceMsp = baliseReponceMsp.value
+//let baliseReponceMsp = document.getElementById("reponsemsp")
+//let reponceMsp = baliseReponceMsp.value
 
 //récuperation de la réponce du msp
-let baliseReponceRs = document.getElementById("reponsers")
-let reponceRs = baliseReponceRs.value
+//let baliseReponceRs = document.getElementById("reponsers")
+//let reponceRs = baliseReponceRs.value
 
-//récupération des info du bénéficiaire
-let infoBenef ={
-    "nom" : document.getElementById("nom").value,
-    "prenom" : document.getElementById("prenom").value,
-    "email" : document.getElementById("emailbenef").value,
-}
+
 
 //récupération des info de la demande de congé
 let infoDemande = {
@@ -29,3 +24,26 @@ let infoDemande = {
     "heurfin" : document.getElementById("heurfin").value,
     "motif" : document.getElementById("motif").value,
 }
+document.getElementById("submit").addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+//récupération des info du bénéficiaire
+let infoBenef ={
+    "nom" : document.getElementById("nom").value,
+    "prenom" : document.getElementById("prenom").value,
+    "email" : document.getElementById("emailbenef").value,
+}
+   
+    document.getElementById("form").classList.add("hide")
+    document.getElementById("simumsp").classList.remove("hide")
+    document.getElementById("infoconge").innerHTML = document.createElement 
+    `<div>
+        <p>${infoBenef.prenom} <p\>
+        <p>${infoBenef.nom} <p\>
+        <p>${infoBenef.email} <p\>
+    <div\>`
+})
+
+
+
