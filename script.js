@@ -8,18 +8,25 @@ let emailRs = baliseEmailRs.value
 
 //récuperation de la réponce du msp
 //let baliseReponceMsp = document.getElementById("reponsemsp")
-//let reponceMsp = baliseReponceMsp.value
+//let reponceMsp = baliseReponceMsp.value$
 
 //récuperation de la réponce du msp
 //let baliseReponceRs = document.getElementById("reponsers")
 //let reponceRs = baliseReponceRs.value
 
-//
+//mets la date de base du clalendrier à la date du jour
+document.getElementById("datedebut").value = new Date()
+
+//mets la date de base du clalendrier à la date du jour
+document.getElementById("datefin").value = new Date()
+
+//mets l'heure de base du selcteur d'heure à 8h00
 document.getElementById("heurdebut").value = "08:00"
 
-//
+//mets l'heure de base du selcteur d'heure à 8h00
 document.getElementById("heurfin").value = "08:00"
 
+//
 document.getElementById("submit").addEventListener("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
