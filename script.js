@@ -14,6 +14,12 @@ let emailRs = baliseEmailRs.value
 //let baliseReponceRs = document.getElementById("reponsers")
 //let reponceRs = baliseReponceRs.value
 
+//
+document.getElementById("heurdebut").value = "08:00"
+
+//
+document.getElementById("heurfin").value = "08:00"
+
 document.getElementById("submit").addEventListener("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -43,11 +49,10 @@ document.getElementById("simumsp").classList.remove("hide")
 //transpher des info saisie dans le formulaire sur la "nouvelle page"
 document.getElementById("infoconge").innerHTML = `<div>
         <p>Info demande de congé</p>
-        <p>Prénom: ${infoBenef.prenom} </p>
-        <p>Nom: ${infoBenef.nom} </p>
+        <p>Nom/Prénom: ${infoBenef.prenom +" "+infoBenef.nom} </p>
         <p>Email: ${infoBenef.email} </p>
         <p>Date: Du ${infoDemande.datedebut +" au "+ infoDemande.datefin}  </p>
-        <p>Nom: De ${infoDemande.heurdebut +" à "+ infoDemande.heurfin} </p>
+        <p>Heure: De ${infoDemande.heurdebut +" à "+ infoDemande.heurfin} </p>
         <p>Motif: ${infoDemande.motif} </p>
     </div>`
 })
