@@ -56,7 +56,19 @@
                     <input type="time" id="heurfin" name="heurfin" min="08:00" max="17:00">
                 </p>
                 <p>
-                    <label for="motif">Motif de l'absence ?</label><br>
+                    <label for="typeabs">Séléctionner le type de votre absence </label><br>
+                    <select name="typeabs" id="typeabs">
+                        <option value="visit-medical">Visite médical</option>
+                        <option value="mariage">Mariage</option>
+                        <option value="deces">Décès</option>
+                        <option value="demenagement">Déménagement</option>
+                        <option value="naissance">Naissance</option>
+                        <option value="comparution-officielle">Comparution officielle</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="motif">Si autre, motif de l'absence ?</label><br>
                     <textarea name="motif" id="motif" placeholder="Ex. : rdv chez le psy"></textarea>
                 </p>
             </fieldset>
