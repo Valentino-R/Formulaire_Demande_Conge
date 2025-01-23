@@ -40,6 +40,7 @@ let infoBenef ={
 
 //récupération des info de la demande de congé.
 let infoDemande = {
+    "typeabs" : document.getElementById("typeabs").value,
     "datedebut" : document.getElementById("datedebut").value,
     "datefin" : document.getElementById("datefin").value,
     "heurdebut" : document.getElementById("heurdebut").value,
@@ -58,6 +59,7 @@ document.getElementById("infoconge").innerHTML = `<div>
         <p>Info demande de congé</p>
         <p>Nom/Prénom: ${infoBenef.prenom +" "+infoBenef.nom} </p>
         <p>Email: ${infoBenef.email} </p>
+        <p>Type d'absence: ${infoBenef.typeabs} </p>
         <p>Date: Du ${infoDemande.datedebut +" au "+ infoDemande.datefin}  </p>
         <p>Heure: De ${infoDemande.heurdebut +" à "+ infoDemande.heurfin} </p>
         <p>Motif: ${infoDemande.motif} </p>
