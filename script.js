@@ -30,6 +30,7 @@ document.getElementById("heurfin").value = "08:00"
 document.getElementById("submit").addEventListener("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
+    console.log(document.getElementById("typeabs").value)
     
 //récupération des info du bénéficiaire
 let infoBenef ={
@@ -59,7 +60,7 @@ document.getElementById("infoconge").innerHTML = `<div>
         <p>Info demande de congé</p>
         <p>Nom/Prénom: ${infoBenef.prenom +" "+infoBenef.nom} </p>
         <p>Email: ${infoBenef.email} </p>
-        <p>Type d'absence: ${infoBenef.typeabs} </p>
+        <p>Type d'absence: ${infoDemande.typeabs} </p>
         <p>Date: Du ${infoDemande.datedebut +" au "+ infoDemande.datefin}  </p>
         <p>Heure: De ${infoDemande.heurdebut +" à "+ infoDemande.heurfin} </p>
         <p>Motif: ${infoDemande.motif} </p>
